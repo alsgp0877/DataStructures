@@ -1,8 +1,4 @@
 ## DataStructures with using Javascript (2024/02/27 ~ )
-책에서는 자바스크립트 쉘 프로그램을 설치해서 작업할 것을 권하였지만 나는 크롬 개발자 도구 콘솔에서 작업하였다.
-![image](https://github.com/alsgp0877/DataStructures/assets/71861051/893a30da-c781-4343-aea4-b1ef029a05b7)
-
-
 <details>
   <summary> 2023-02-28 2장 연습문제
 </summary>
@@ -81,3 +77,6 @@
   - 이차원 배열의 경우 내가 아는건 [i][j] 밖에 없어서 패스
 
 </details>
+
+## 참고자료
+![image](https://github.com/alsgp0877/DataStructures/assets/71861051/893a30da-c781-4343-aea4-b1ef029a05b7)
