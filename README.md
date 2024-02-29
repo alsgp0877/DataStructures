@@ -1,6 +1,6 @@
 ## DataStructures with using Javascript (2024/02/27 ~ )
 <details>
-  <summary> 2023-02-28 3장 1 연습문제
+  <summary> 2023-03-01 3장 1 연습문제
 </summary>
 
   -  2장에서 자바스크립트에 내장된 반복자 함수를 사용해보려고 했으나 기억이 잘 나지도 않고 for과 if만 있다면 다 구현할 수 있다고 생각해서 하드코딩하였다.
