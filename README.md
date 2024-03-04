@@ -1,7 +1,47 @@
 ## DataStructures with using Javascript (2024/02/27 ~ )
 
 <details>
-  <summary> 2023-03-02 3장 2 연습문제
+  <summary> 2023-03-05 3장 3 연습문제
+</summary>
+
+- 이번 문제 로직은 금방 풀어냈으나 다른문제에서 시간을 사용했다.
+- List() 함수의 독립성을 최대한 지켜주면서 코딩 하고 싶어서 이것저것 시도 해봤다가 실패했다. 그리고 깨달은건 다음과 같다.
+- 'var personList = new List();' 코드로 List객체 사용을 선언한 후 부턴 모든 this는 List객체를 향한다는것이다.
+- this의 사용법이 이해가 안되서 바드에게 물어보니 계속 '현재 실행 컨텍스트를 참조' 한다는 말만 반복하는것이다..
+- 그래서 유튜브나 사전을 찾아 조합을 해보니 '현재의 코드를 해석하는 시점에서 해석에 사용되는 모든 정보중에 가장 가깝거나 이미언급된것'을 선택한다는 의미로 해석이 되었다.
+- 그래서 가장 접근성이 높은 personList를 현재 실행 컨텍스트로 인식하고 사용하는것 같다. 
+- 그러니 'personList.append(new Person("Red","M"));' 코드에서 인자를 다른 객체를 사용했다고해서 this가 Person 객체를 향하지 않는다는것이다. Person은 단지 데이터를 담는 바구니일 뿐이다.
+- 그래서 this.dataStore를 사용하고 싶으면 List() 함수안에 선언하고 활용해야하고 
+- 만약 this.dataStore을 사용하고 안하고자 한다면 List() 함수안에 선언하지 않고 인스턴스화 한 변수를 가져다 사용하면 된다.
+- 
+    ````
+      //this.dataStore를 사용하고자 하는 경우 
+      function List(){
+        ....
+        this.listSameGender = listSameGender;
+      }
+    
+      var personList = new List();
+      personList.listSameGender();
+    
+      function listSameGender(){
+        console.log(this.dataStore);
+      }
+
+      //this.dataStore를 사용하지 않는 경우
+      var personList = new List();
+      personList.listSameGender(personList);
+    
+      function listSameGender(personList){
+        console.log(personList.dataStore);
+      }
+    
+    ````
+
+</details>
+
+<details>
+  <summary> 2023-03-04 3장 2 연습문제
 </summary>
 
     ````
