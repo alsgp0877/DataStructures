@@ -1,6 +1,29 @@
 ## DataStructures with using Javascript (2024/02/27 ~ )
 
 <details>
+  <summary> 2023-03-02 3장 2 연습문제
+</summary>
+
+    ````
+    function insertList(element){
+        var cnt = 0;
+        var dataStore = this.dataStore;
+        for(var i = 0; i<dataStore.length;i++){            
+            if(dataStore[i] > element){
+                cnt++;//현재리스트의 모든 요소보다 작을때
+            }
+         }
+        
+        if(cnt == dataStore.length){
+           this.append(element);
+        }
+    }
+
+    ````
+
+</details>
+
+<details>
   <summary> 2023-03-02 3장 1 연습문제 코드 최적화
 </summary>
 
