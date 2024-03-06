@@ -1,6 +1,21 @@
 ## DataStructures with using Javascript (2024/02/27 ~ )
 
 <details>
+  <summary> 2023-03-07 3장 4 연습문제
+</summary>
+
+- 
+  
+    ````
+      //this.dataStore를 사용하고자 하는 경우 
+
+    
+    ````
+
+</details>
+
+
+<details>
   <summary> 2023-03-05 3장 3 연습문제
 </summary>
 
